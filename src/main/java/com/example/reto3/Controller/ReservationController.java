@@ -1,5 +1,7 @@
 package com.example.reto3.Controller;
 
+import com.example.reto3.Model.DTOs.CompletedAndCancelled;
+import com.example.reto3.Model.DTOs.TotalAndClient;
 import com.example.reto3.Model.Reservation;
 import com.example.reto3.Service.ReservationService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,4 +45,21 @@ public class ReservationController {
     public boolean delete(@PathVariable int id){
         return reservationService.deleteReservation(id);
     }
+
+    //Reto 5
+
+    @GetMapping("/report-dates/{fecha1}/{fecha2}")
+    public List<Reservation> getReservationsBetweenDatesReport(@PathVariable("fecha1") String fecha1, @PathVariable("fecha2") String fecha2){
+        return reservationService.getReservationsBetweenDatesReport(fecha1, fecha2);
+    }
+
+    @GetMapping("/report-status")
+    public CompletedAndCancelled getReservationsStatusReport(){
+        return reservationService.getReservationStatusReport();
+    }
+
+    @GetMapping("/report-clients")
+    public List<TotalAndClient> getTopClientsReport(){
+        return reservationService.getTopClientsReport();
+    }	
 }
