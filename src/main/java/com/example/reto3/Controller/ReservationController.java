@@ -61,5 +61,5 @@ public class ReservationController {
     @GetMapping("/report-clients")
     public List<TotalAndClient> getTopClientsReport(){
         return reservationService.getTopClientsReport();
-    }	
+    }
 }

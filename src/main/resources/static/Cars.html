@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qx5JnK2J10vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Carros</title>
+</head>
+<body class="bg-image"
+      style="background-image: url('https://img.freepik.com/foto-gratis/movimiento-borroso-que-brilla-intensamente-vida-ciudad-noche-generada-ai_24640-81354.jpg?w=826&t=st=1686629159~exp=1686629759~hmac=b313a8b6e85908ba5b090a11f49c9411a6a17b906d896b59da7eb4afe757c4f9');
+        height: 70px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;">
+    <div style="width: 80%; text-align: center; margin: auto; padding: 2%;">
+        <h1 class="display-2 fw-bold text-white">Carros</h1>
+
+        <div style="width: 40%; text-align: center; margin: auto;">
+
+            <table id="tablaCarros" class="table table-bordered border-dark">
+
+            </table>
+        </div>
+
+        <h4 class="fs-2 fw-bold text-white">Registrar Carro</h4>
+        <div style="width: 30%; text-align: center; margin: auto; padding: 2%">
+            <form>
+                <input class="form-control" id="name" placeholder="Nombre del carro"/><br>
+                <input class="form-control" id="brand" placeholder="Marca del carro"/><br>
+                <input class="form-control" id="year" placeholder="Año del carro"/><br>
+                <input class="form-control" id="description" placeholder="Descripción del carro"/><br>
+            </form>
+
+            <button class="btn btn-success" onclick="guardarAdmin()">Guardar Carro</button> <button class="btn btn-primary" onclick="document.location.href='cars.html';">Volver</button>
+        </div>
+    </div>
+</body>
+</html>

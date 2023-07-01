@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+  <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qx5JnK2J10vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <title>Puntaje</title>
+</head>
+<body class="bg-image"
+      style="background-image: url('https://img.freepik.com/vector-gratis/coche-equipaje-techo-conduce-carretera-ciudad-noche-ilustracion-dibujos-animados-vectoriales-paisaje-edificios-ciudad-horizonte-carretera-auto-maletas_107791-10030.jpg?w=996&t=st=1688183107~exp=1688183707~hmac=1d7912b3bfede6b2571c94965e60a5e99c3537f7351bd854dffbe8a4c5ad4bc7');
+        height: 40px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;">
+  <div style="width: 80%; text-align: center; margin: auto; padding: 2%;">
+    <h1 class="display-2 fw-bold text-white">Puntaje</h1><br><br>
+
+
+    <div style="width: 40%; text-align: center; margin: auto;">
+
+      <table id="tablaPuntaje" class="table table-bordered border-dark">
+
+      </table>
+    </div>
+
+    <h4 class="fs-2 fw-bold text-white">Registrar Puntaje</h4>
+    <div style="width: 30%; text-align: center; margin: auto; padding: 2%">
+      <form>
+        <input class="form-control" id="messageText" placeholder="Mensaje"/><br>
+        <input class="form-control" id="starts" placeholder="Calificacón"/><br>
+      </form>
+
+      <button class="btn btn-success" onclick="guardarAdmin()">Guardar puntaje</button> <button class="btn btn-primary" onclick="document.location.href='Score.html';">Volver</button>
+    </div>
+  </div>
+</body>
+</html>
